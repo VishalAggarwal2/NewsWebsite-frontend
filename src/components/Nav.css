@@ -1,0 +1,100 @@
+.Nav{
+    width: 100vw;
+    height: 15vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   background-color: black;
+   align-items: center;
+}
+.Nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.inp input{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border-color: red;
+    padding-right: 30px; 
+    padding-left: 30px;
+    }
+    .Nc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 25vw;
+        border-style: solid;
+        border-radius: 20px;
+        padding: 20px;
+        border-color: red;
+        background-color: black;
+        color: white;
+    }
+    .main{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+    }
+    span button{
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 5rem;
+        
+    }
+    .navbtn{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navbtn button{
+        background-color: black;
+        cursor: pointer;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+        border-color: brown;
+        border-radius: 15px;
+    }
+
+    @media (max-width: 800px) {
+        .main{
+            flex-direction: column;
+            align-items: center;
+        }
+      .Nc{
+        width: 70vw;
+      }   
+      .Nav{
+        flex-direction: column;
+        height: 40vh;
+      }
+      .Nav h1{
+       position: relative;
+       top: 2rem;
+      }
+     .Nav ul{
+        position: relative;
+        top: -3rem;
+        /* display: none; */
+        gap: 0px;
+        flex-direction: column;
+     }
+    }
